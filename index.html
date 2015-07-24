@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="WhatsApp Share Button">
+	    <meta name="author" content="Rahul">
+	    <title>WhatsApp Share Button</title>
+	    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!-- Important -->
+		<link rel="stylesheet" type="text/css" href="css/sakha.whatsappsharebutton.css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">WhatsApp Share Button</a>
+		    </div>
+		  </div>
+		</nav>
+		<div class="container">
+			<!-- Important -->
+			<a href="#" class="whatsAppShareButton1"></a>
+			<a href="#" class="whatsAppShareButton2"></a>
+			<a href="#" class="whatsAppShareButton3"></a>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+		<!-- Important -->
+		<script type="text/javascript" src="js/sakha.whatsappsharebutton.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// Initilize whatsapp button
+				$(".whatsAppShareButton1").whatsappsharebutton();
+				$(".whatsAppShareButton2").whatsappsharebutton({
+					buttonText: "",
+					size: 1
+				});
+				$(".whatsAppShareButton3").whatsappsharebutton({
+					buttonText: "Send",
+					size: 2
+				});
+			});
+		</script>
+	</body>
+</html>

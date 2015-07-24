@@ -1,0 +1,51 @@
+.btn-whatsapp{
+	background-color: #234141;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 5px;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+.btn-whatsapp:visited{
+	color: #fff;
+	text-decoration: none;
+}
+.btn-whatsapp.btn-whatsapp-sm{
+	padding: 4px 10px;
+	font-size: 12px;
+	line-height: 1.9;
+	border-radius: 3px;
+}
+.btn-whatsapp.btn-whatsapp-xs{
+	padding: 1px 5px;
+	font-size: 12px;
+	line-height: 1.7;
+	border-radius: 3px;
+}
+.btn-whatsapp > span.whatsappicon{
+	background-image: url(../imgs/whatsapp-icon.png);
+	background-size: contain;
+	float: left;
+}
+.btn-whatsapp-sm > span.whatsappicon{
+	width: 21px;
+	height: 21px;
+	margin-right: 5px;
+}
+.btn-whatsapp-xs > span.whatsappicon{
+	width: 15px;
+	height: 15px;
+	margin: 2px;
+}
+
+@media (min-width: 1200px){
+	.whatsappbtn-hidden {
+		display: none!important;
+	}
+}
